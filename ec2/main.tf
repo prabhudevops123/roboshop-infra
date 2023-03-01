@@ -26,7 +26,7 @@ resource "null_resource" "provisioner" {
     inline = [
       "git clone https://github.com/prabhudevops123/roboshop-shell",
       "cd roboshop-shell",
-      "bash ${var.component}.sh ${var.password}"
+      "sudo bash ${var.component}.sh ${var.password}"
     ]
 
   }
